@@ -132,6 +132,7 @@ Decided after talking through the realistic odds of this plan landing a remote r
 - [ ] Containerize the flagship project — deploy to both EKS and AKS, compare/document the tradeoffs (great blog fodder, directly proves cloud-agnostic chops)
 - [ ] Add one modern protocol layer to the project as a differentiator: an MCP server or A2A-style agent interface in front of it — ties directly into the "AI Driven Development" thread and is currently a strong 2026 senior/platform signal
 - [ ] Keep C# growing via the day job; deliberate-practice TypeScript through a small NestJS or Next.js piece of the project (e.g., an admin UI or dashboard)
+- [ ] Pick at least one monthly system design case study and implement it in Java/Spring Boot instead of C# — 7 years of Java depth doesn't need defending, but a demonstrably *recent* Java artifact closes the "how fresh is it" gut-check some hiring managers will do for Java-specific roles
 - [ ] Stretch: AZ-400, only if the above is on schedule
 
 ### Phase 5 — Months 14-17: Depth + interview readiness
