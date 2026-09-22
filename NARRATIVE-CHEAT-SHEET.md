@@ -41,6 +41,18 @@ and always intended to return to it once that was in place — this move is that
 - If asked "why leave now": tie it back to the same reason — the temporary trade has served its
   purpose, and returning to remote was always the plan, not a reaction to something going wrong.
 
+## Bonus: if asked about current architecture experience
+**Say:** "Alongside my day-to-day role, I've been a fractional software architect for a pre-seed
+startup for about eight months — cleared with Carvana during hiring — which has kept me
+hands-on with architecture-level decisions even while my title day-to-day is IC-focused."
+
+- Use this whenever a title-trajectory question comes up ("why Senior now after Architect?") —
+  it's live, current, external proof that the substance never actually went away.
+- No need to defend the startup's odds of survival — that's not the point being made here.
+- **If the MassMutual pilot confirms**, upgrade the line: "...and the startup is currently
+  piloting with MassMutual" — a named enterprise customer is concrete, verifiable validation, not
+  just an early-stage claim. Don't overstate it before it's actually confirmed.
+
 ## Master framing (if asked to summarize the whole arc)
 "Five years building up to architect, a four-month detour into a role that wasn't the right fit,
 and a deliberate, temporary in-office trade for comp and family stability. I'm now looking for

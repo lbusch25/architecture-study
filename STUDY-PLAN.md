@@ -18,6 +18,14 @@ from the original 18 months to absorb a planned baby buffer — see Phase breakd
   of those traits with the least friction (see Positioning & market timing below).
 - First baby due **January 2027** — a real constraint on the schedule, not just a life note.
   See the baby buffer in the Phase breakdown.
+- **Fractional Software Architect for a pre-seed startup (~$200k raised), ongoing for ~8 months,
+  disclosed to and cleared with Carvana during hiring.** Concrete, current, external evidence of
+  continued architect-level scope running concurrently with the Senior SWE2 title — this is a
+  real differentiator, not just a résumé line, and directly counters the "titled down = no
+  substance" worry. List it on the résumé/LinkedIn as its own concurrent entry, not folded into
+  Carvana. **Possible paid pilot with MassMutual in progress (not yet confirmed)** — if it lands,
+  that's real named-enterprise validation worth naming specifically in interviews; if it doesn't,
+  the fractional-architect line still stands on its own regardless.
 
 ## Guiding principles
 
