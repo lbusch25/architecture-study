@@ -233,6 +233,30 @@ flagship portfolio project rather than always spinning up something disposable.
 | 18 | | | |
 | 19 | | | |
 
+## Coding & SQL drills (ongoing, ramps up in Phase 5-6)
+
+A different, perishable muscle from system design/certs/portfolio — don't bank it 18 months
+early, maintain it lightly throughout, then ramp hard right before actually interviewing.
+
+- **Phases 1-4 (maintenance mode):** 1-2 problems every couple of weeks, rotating across
+  **Java, C#, and TypeScript** — kept at "clean, explainable, right complexity" difficulty
+  rather than grinding hard problems.
+- **Phases 5-6 (ramp-up):** shift to 3-4x/week dedicated practice, since this is the actual
+  deployment window.
+- **SQL gets equal or higher priority than generic algorithm practice** — you've already hit it
+  in real loops, and it's increasingly weighted as heavily as DS&A at Senior+ backend/platform
+  level.
+  - **LeetCode's SQL section** for interview-pattern recognition (joins, aggregations, window
+    functions, common question shapes) — fine for timed pattern practice, but schemas are
+    synthetic and it won't show query plans or indexing behavior.
+  - **For genuinely realistic practice:** load a real sample database — Sakila (MySQL), Chinook
+    (MySQL/Postgres/SQLite), or a Postgres port of Northwind — into the local Postgres/MySQL
+    container already set up per `TOOLING-LOCAL-FREE.md`, and write increasingly complex queries
+    against it, including `EXPLAIN ANALYZE` for indexing/query-plan practice. This tests real
+    join complexity and query optimization, which LeetCode's synthetic schemas can't.
+  - **PGExercises.com** as a free middle ground — one realistic schema, progressively harder,
+    real PostgreSQL.
+
 ## Open items to fold in from `STUDY-TOPICS.md`
 Fault Tolerance, Performance, and CI/CD (GitHub Actions) don't have a dedicated slot above —
 they should be absorbed into the flagship project's build-out in Phases 2-4 rather than studied
