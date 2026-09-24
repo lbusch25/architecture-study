@@ -5,6 +5,49 @@ technical justification here so it's ready to defend under a real follow-up ques
 asserted and hoped it doesn't get probed. Add a new section per project as they come up (the
 flagship portfolio project and system design case studies will generate more of these over time).
 
+## Test drive cube (in-person kiosk, Carvana)
+
+**The resume bullet:** built the backend for Carvana's test drive cube — a four-display physical
+kiosk at test drive centers where customers browse current inventory over a WebSocket connection,
+get matched to an available test drive vehicle based on their selection, and get a generated
+walking path to that vehicle.
+
+**Don't undersell this one just because it feels less complex than the workflow engine** — it's a
+different, and genuinely interesting, kind of problem: real-time, physical, and with a live
+concurrency challenge instead of a pure backend/data problem.
+
+**The architecture tradeoff worth explaining:** state is kept in-pod (local memory) rather than
+in a distributed store like Redis or Cosmos DB, with Azure Service Bus used to broadcast
+state-change events so every pod's local memory converges — an eventually-consistent,
+event-propagated cache instead of a shared external store. That's a real CAP-style tradeoff:
+favoring low latency (no network round-trip to an external store, which matters for a kiosk UX
+where a customer is standing there waiting) and operational simplicity (no separate distributed
+cache infra to run) over strong consistency — justified specifically because the tracked data is
+low-scale and ephemeral (relevant only for the life of an active session at a physical location),
+so eventual convergence and loss-on-restart are both acceptable costs.
+
+**The concurrency question, resolved — and it's a better answer than a distributed lock:**
+customers pick a vehicle from the merchandise site (make/model/options), which gets fuzzy-matched
+to an actual physical vehicle on the lot — not the literal unit they browsed. For most
+make/model/option combinations there's only one matching physical vehicle on the lot anyway, so
+multiple customers *can* legitimately match to "the same vehicle" in software terms, and that's
+fine — the real constraint (only one person can physically test-drive a specific car at a time)
+is enforced operationally by staff on the lot, not by the software. Deliberately not building a
+distributed lock/reservation system here is the right call, not a gap: the actual scarce resource
+is physical and human-mediated, so a software-level consistency mechanism would have been solving
+a problem that doesn't exist at that layer. **Say in an interview:** "We recognized the race
+condition wasn't actually a software problem — the physical test-drive slot is the real
+constraint, and that's already mediated by staff on the lot. Building a distributed lock for it
+would have been unnecessary complexity for a constraint the system doesn't actually own." That
+kind of "we identified what not to build" answer reads as stronger judgment than a clever locking
+scheme would have.
+
+**Why it's sellable despite feeling smaller:** it's physical and memorable (interviewers remember
+an unusual kiosk/IoT-adjacent project more than another backend API), it's directly tied to
+Carvana's core revenue path (getting customers into the right test drive quickly), and it
+demonstrates real-time/event-driven systems breadth that complements the more traditional
+enterprise-SaaS flavor of the workflow engine story — range, not just repetition of one skill.
+
 ## In-house workflow engine (vs. Temporal / Camunda)
 
 **The resume bullet:** built an in-house workflow engine because existing options (Temporal,
