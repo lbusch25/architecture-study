@@ -42,16 +42,18 @@ and always intended to return to it once that was in place — this move is that
   purpose, and returning to remote was always the plan, not a reaction to something going wrong.
 
 ## Bonus: if asked about current architecture experience
-**Say:** "Alongside my day-to-day role, I've been a fractional software architect for a pre-seed
-startup for about eight months — cleared with Carvana during hiring — which has kept me
-hands-on with architecture-level decisions even while my title day-to-day is IC-focused."
+**Say:** "Alongside my day-to-day role, I've been a fractional software architect — fully remote
+— for a pre-seed startup for about eight months, cleared with Carvana during hiring, which has
+kept me hands-on with architecture-level decisions and current, active remote work even while my
+day job is in-office."
 
 - Use this whenever a title-trajectory question comes up ("why Senior now after Architect?") —
   it's live, current, external proof that the substance never actually went away.
 - No need to defend the startup's odds of survival — that's not the point being made here.
-- **If the MassMutual pilot confirms**, upgrade the line: "...and the startup is currently
-  piloting with MassMutual" — a named enterprise customer is concrete, verifiable validation, not
-  just an early-stage claim. Don't overstate it before it's actually confirmed.
+- **Updated line, now that there's real traction (Sept 2026):** "...and the startup has since
+  landed real contracts — including a guaranteed deal and a likely one in the $25-40k ARR range
+  — with more in the pipeline, including MassMutual evaluating a paid tooling buildout." Concrete
+  and citable, not a hedge — this is real revenue, not just early-stage promise.
 
 ## Master framing (if asked to summarize the whole arc)
 "Five years building up to architect, a four-month detour into a role that wasn't the right fit,

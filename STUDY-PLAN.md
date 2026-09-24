@@ -23,9 +23,10 @@ from the original 18 months to absorb a planned baby buffer — see Phase breakd
   continued architect-level scope running concurrently with the Senior SWE2 title — this is a
   real differentiator, not just a résumé line, and directly counters the "titled down = no
   substance" worry. List it on the résumé/LinkedIn as its own concurrent entry, not folded into
-  Carvana. **Possible paid pilot with MassMutual in progress (not yet confirmed)** — if it lands,
-  that's real named-enterprise validation worth naming specifically in interviews; if it doesn't,
-  the fractional-architect line still stands on its own regardless.
+  Carvana. **Real traction as of Sept 2026:** a guaranteed ~$24k ARR contract, a likely ~$35-40k
+  ARR contract, additional deals in the pipeline, and MassMutual actively evaluating a ~$15k
+  tooling buildout that could convert into a larger ARR contract. This is concrete, citable
+  evidence — not just "early-stage and unproven" — worth naming specifically in interviews.
 
 ## Guiding principles
 
@@ -94,6 +95,25 @@ Decided after talking through the realistic odds of this plan landing a remote r
   restart once things feel sustainable post-buffer, tentatively **Phase 3** — but a deliberate
   push still waits for the certs/portfolio to exist (~month 9+), and there's no fixed date
   attached to any of this beyond "when it's actually sustainable."
+
+## Alternative path: startup full-time (optionality, not a decision yet)
+
+The fractional startup work has a second possible future beyond being a resume differentiator:
+if it keeps growing, it could become a real full-time option instead of (or as well as) landing
+a remote role elsewhere. No need to bet on this now — the current light/fractional scope already
+lets it mature in parallel with the main plan without forcing a choice.
+
+**Concrete conditions before full-time there is even on the table** (not vague "if it feels
+stable," actual gates):
+- ~18 months of runway covered by revenue/burn rate — ideally profitability, not just runway
+- Offers a Roth 401k
+- Offers health insurance
+
+Until the startup clears those, treat it strictly as fractional/light-touch, exactly as now —
+family risk (insurance, the baby, no cushion to spare) rules out going full-time before then
+regardless of how promising the traction looks. Revisit this around the same ~18-19 month mark
+as Phase 6 of the main plan, when there'll be real data on both paths instead of a guess made too
+early on either one.
 
 ## Certification order (revised)
 
