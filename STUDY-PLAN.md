@@ -124,6 +124,7 @@ early on either one.
 | 3 | **Azure Administrator Associate (AZ-104)** | Prerequisite for AZ-305, and forces structured Azure fundamentals instead of just what Carvana happens to touch |
 | 4 | **Azure Solutions Architect Expert (AZ-305)** | The centerpiece — pairs with AWS Pro to make the cloud-agnostic claim credible on paper |
 | 5 (stretch) | AZ-400 (DevOps Engineer Expert) | Only if ahead of schedule after AZ-305; drop without guilt if not |
+| 6 (stretch, lower priority than #5) | CKA (Certified Kubernetes Administrator) | Not a real target — the Phase 4 EKS/AKS deployment work already covers most of the real learning, and CKA has less ATS-gating value than the cloud provider certs. Only worth picking up if genuinely ahead of schedule with room to spare after everything else; skip without a second thought otherwise |
 
 ## Phase breakdown (~3 months each)
 
