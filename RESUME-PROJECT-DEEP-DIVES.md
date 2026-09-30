@@ -48,6 +48,38 @@ Carvana's core revenue path (getting customers into the right test drive quickly
 demonstrates real-time/event-driven systems breadth that complements the more traditional
 enterprise-SaaS flavor of the workflow engine story — range, not just repetition of one skill.
 
+## Vehicle/inventory CMS (data layer behind the test drive cube)
+
+**The resume bullet:** built the internal CMS used by content and operations teams to manage
+vehicle catalog data, marketing copy, and location-specific test-drive vehicle availability —
+the reference data store loaded by the cube's matching algorithm.
+
+**The architecture point worth naming explicitly:** this is a deliberate three-layer separation
+of concerns, not one system doing everything:
+1. **Catalog data** (vehicle specs, copy) — relatively slow-changing, global across locations.
+2. **Location-specific availability** — which physical vehicles are actually present and
+   drivable at a given test drive center right now, distinct from the general Carvana stock
+   catalog.
+3. **Real-time session/event layer** — live customer interactions, handled by a separate UI and
+   the same Service Bus event mechanism documented in the test drive cube entry above.
+
+The pods combine all three to perform the actual customer-to-vehicle matching: catalog data for
+what a vehicle *is*, location availability for what's actually *there*, and real-time events for
+what a *customer is doing right now*. That's a clean, purposeful split — cold/slow-changing
+reference data kept separate from hot/real-time transactional state — rather than one system
+overloaded with both.
+
+**Say in an interview:** "We split the system into three logical layers instead of one flat
+data store: a CMS for slow-changing catalog data and copy, a location-specific availability
+layer for which vehicles were physically present at a given center, and a real-time event layer
+for live customer sessions. The pods loaded the first two and combined them with the third to
+do the actual matching."
+
+**Ties back to the earlier judgment call:** the location-availability data being managed through
+the CMS (staff/ops input) rather than enforced through a software lock reinforces the same point
+made in the test drive cube entry — the physical constraint is genuinely operational, not a
+software consistency problem, and the system design reflects that rather than fighting it.
+
 ## In-house workflow engine (vs. Temporal / Camunda)
 
 **The resume bullet:** built an in-house workflow engine because existing options (Temporal,
