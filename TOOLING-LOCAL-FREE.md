@@ -79,6 +79,39 @@ real cloud, matrix runners).
 | CI/CD pipelines | `act` | OIDC-to-cloud auth, real matrix runners |
 | Networking (VNets, VPCs, private endpoints) | Terraform plan/validate only | Almost everything else here is real-Azure/real-AWS-only — budget-alarm and time-box these sessions tightly |
 
+## Installing on macOS via Homebrew
+
+Not everything above is a brew formula — here's what actually is, and what to reach for instead.
+
+**Directly via Homebrew:**
+```
+brew install localstack           # LocalStack CLI
+brew install awscli-local          # AWS CLI wrapper pointed at LocalStack
+brew install aws-sam-cli           # community-maintained in homebrew-core now — AWS dropped its own tap in 2023
+brew tap azure/functions && brew install azure-functions-core-tools@4   # official Microsoft tap
+brew install minio/stable/minio    # MinIO server
+brew install minio/stable/mc       # MinIO client
+brew install kind
+brew install k3d
+brew install minikube
+brew install act
+```
+
+**Docker itself, needed for most of the AWS/Azure emulators:**
+```
+brew install --cask docker         # Docker Desktop, or:
+brew install colima docker docker-compose   # lighter CLI-only alternative
+```
+
+**Not brew — use pip/npm/Docker instead:**
+- `tflocal` — pip: `pip install terraform-local`
+- Moto — pip: `pip install moto`
+- Azurite — npm: `npm install -g azurite` (or run via Docker)
+- DynamoDB Local — Docker image `amazon/dynamodb-local`, or the jar from AWS's docs (no brew formula)
+- Azure Cosmos DB Emulator — Docker only
+- Azure Service Bus Emulator — Docker Compose only
+- Azure SQL Edge — Docker only
+
 ## Sources
 
 - [LocalStack Pricing](https://www.localstack.cloud/pricing)
@@ -88,3 +121,7 @@ real cloud, matrix runners).
 - [nektos/act on GitHub](https://github.com/nektos/act)
 - [AWS Free Tier](https://aws.amazon.com/free/)
 - [Explore Free Azure Services](https://azure.microsoft.com/en-us/pricing/free-services)
+- [localstack — Homebrew Formulae](https://formulae.brew.sh/formula/localstack)
+- [Homebrew Formulae: aws-sam-cli](https://formulae.brew.sh/formula/aws-sam-cli)
+- [Homebrew Formulae: awscli-local](https://formulae.brew.sh/formula/awscli-local)
+- [Azure/homebrew-functions — GitHub](https://github.com/Azure/homebrew-functions)
