@@ -104,9 +104,9 @@ brew install colima docker docker-compose   # lighter CLI-only alternative
 ```
 
 **Not brew — use pip/npm/Docker instead:**
-- `tflocal` — pip: `pip install terraform-local`
-- Moto — pip: `pip install moto`
-- Azurite — npm: `npm install -g azurite` (or run via Docker)
+- `tflocal` — a CLI command used across many projects, so install it globally, but **not** via a bare `pip install` (Homebrew's Python is "externally managed" per PEP 668 and will likely reject it). Use `pipx install terraform-local` instead — installs the CLI in its own isolated environment while still putting `tflocal` on your PATH.
+- Moto — this is a testing *library* you `import` in test code, tied to one specific project's test suite, not a standalone command. Install it **per-project**, inside that project's virtualenv, and list it in that project's `requirements.txt`/`pyproject.toml` — not a global install. (It also has an optional standalone "moto server" mode that acts like a mini LocalStack; if used that way across projects, treat it like `tflocal` and install via `pipx` instead.)
+- Azurite — a CLI command used across projects, so a genuine global npm install is fine here: `npm install -g azurite` (or run via Docker). npm doesn't have the same system-Python conflict pip does on macOS.
 - DynamoDB Local — Docker image `amazon/dynamodb-local`, or the jar from AWS's docs (no brew formula)
 - Azure Cosmos DB Emulator — Docker only
 - Azure Service Bus Emulator — Docker Compose only
