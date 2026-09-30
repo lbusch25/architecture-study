@@ -89,13 +89,22 @@ brew install localstack           # LocalStack CLI
 brew install awscli-local          # AWS CLI wrapper pointed at LocalStack
 brew install aws-sam-cli           # community-maintained in homebrew-core now — AWS dropped its own tap in 2023
 brew tap azure/functions && brew install azure-functions-core-tools@4   # official Microsoft tap
-brew install minio/stable/minio    # MinIO server
+brew install minio/stable/minio    # MinIO server — ⚠️ unreliable, see note below
 brew install minio/stable/mc       # MinIO client
 brew install kind
 brew install k3d
 brew install minikube
 brew install act
 ```
+
+**⚠️ MinIO server tap is known to break** — the `minio/stable/minio` formula pins to a specific
+dated release, and MinIO periodically removes old dated builds from their download server
+(confirmed 410 Gone on `RELEASE.2025-09-06T17-38-46Z` as of testing this). Rather than fight the
+tap, just run the server via Docker instead:
+```
+docker run -p 9000:9000 -p 9001:9001 minio/minio server /data --console-address ":9001"
+```
+`brew install minio/stable/mc` (the client) wasn't affected and is fine to keep using via brew.
 
 **Docker itself, needed for most of the AWS/Azure emulators:**
 ```
