@@ -22,6 +22,7 @@ fuzzy."
 
 Approximate domain breakdown (verify current weights on the official guide — these shift
 between exam versions):
+
 - Design Solutions for Organizational Complexity (~26%)
 - Design for New Solutions (~29%)
 - Continuous Improvement for Existing Solutions (~25%)
@@ -32,6 +33,7 @@ between exam versions):
 Likely candidates given the hands-on-Terraform background specifically (operational AWS-native
 knowledge that a from-scratch build doesn't naturally cover, as opposed to architecture
 reasoning, which is probably already solid):
+
 - [ ] AWS Organizations / Control Tower — multi-account governance patterns
 - [ ] Migration-specific services — DMS, Application Migration Service (MGN)
 - [ ] Cost-optimization specifics — Savings Plans vs. Reserved Instances, Cost Explorer/Budgets patterns
@@ -52,12 +54,12 @@ Keep taking full, timed practice exams as gaps close — both to verify the weak
 actually fixed and to build pacing stamina. SAP-C02 is 180 minutes and scenario-heavy; time
 management is as much a skill here as the content knowledge.
 
-| Attempt | Date | Score | Weakest domain this time |
-|---|---|---|---|
-| Diagnostic | | | |
-| 2 | | | |
-| 3 | | | |
-| 4 | | | |
+| Attempt    | Date | Score | Weakest domain this time |
+| ---------- | ---- | ----- | ------------------------ |
+| Diagnostic |      |       |                          |
+| 2          |      |       |                          |
+| 3          |      |       |                          |
+| 4          |      |       |                          |
 
 ## Step 5: Schedule the exam
 
@@ -73,3 +75,5 @@ existing hands-on knowledge is freshest and before AZ-104/AZ-305 study ramps up.
 - Official AWS SAP-C02 Exam Guide (PDF)
 - AWS Well-Architected Framework whitepaper
 - Adrian Cantrill / Stephane Maarek SAP-C02 courses — only for domains that come back broadly weak
+- AWS Certified Solutions Architect - Professional (SAP-C02) Exam Guide
+- AWS Certified Solutions Architect - Professional (SAP-C02) Exam Learning Path
