@@ -5,6 +5,39 @@ technical justification here so it's ready to defend under a real follow-up ques
 asserted and hoped it doesn't get probed. Add a new section per project as they come up (the
 flagship portfolio project and system design case studies will generate more of these over time).
 
+## Fractional architecture work at a VC-funded startup (SOC2 in progress — placeholder, flesh out as it develops)
+
+**The resume bullet (draft):** Fractional Software Architect, VC-funded startup, ~8+ months —
+architecting toward SOC2 Type II compliance to support enterprise sales, including a named
+enterprise prospect (MassMutual).
+
+**Why it's a strong signal:** the combination of (a) real architectural responsibility in a
+resource-constrained, ambiguous environment, (b) external validation via actual VC funding, not
+just a self-funded, unvalidated side project, (c) done concurrently with a full-time job,
+demonstrating genuine commitment rather than a hobby, and (d) bridges the Coupa security/
+compliance exposure — disliked personally, but real literacy gained — into a context where it
+now pays off directly in actual engineering work.
+
+**The SOC2 angle specifically:** SOC2 compliance is very likely the actual gating factor for a
+financial services company like MassMutual to even evaluate a startup vendor in the first place.
+That makes "architected controls supporting SOC2 Type II compliance, directly enabling enterprise
+prospect evaluation" a concrete, causally-connected business story — compliance work tied to a
+real outcome, not a checkbox exercise.
+
+**Precision matters — don't overclaim before it's actually true:** "architected controls toward
+SOC2 Type II compliance" is accurate for in-progress work. "Achieved SOC2 certification" should
+only be used once an actual audit is complete. Claiming the stronger version early is exactly the
+kind of thing that unravels under one specific interview follow-up.
+
+**Fill in once further along:**
+- [ ] Which specific controls/architecture decisions were made (access control design, encryption
+      standards, logging/monitoring, change management process, vendor risk management, incident
+      response procedures)
+- [ ] Current status of the actual audit (Type I vs. Type II, in progress vs. complete, auditor
+      engaged or not)
+- [ ] Any quantifiable connection to the MassMutual deal specifically (e.g., "SOC2 readiness was
+      cited as a requirement in the MassMutual evaluation")
+
 ## Test drive cube (in-person kiosk, Carvana)
 
 **The resume bullet:** built the backend for Carvana's test drive cube — a four-display physical
