@@ -12,10 +12,12 @@ from the original 18 months to absorb a planned baby buffer — see Phase breakd
 - Already deep into AWS Solutions Architect Professional prep — built a cloud from scratch
   with Terraform, haven't sat the exam yet.
 - Goal: **not** title-maximizing. The actual target is a **remote** role that's stable, pays
-  well, has good work/life balance, and is genuinely engaging day-to-day (Coupa's core failure
-  was the last one — stable and paid fine, but was miserable to actually do). Staff/Principal
-  is not the goal in itself; Senior IC is the pragmatic lane most likely to deliver all four
-  of those traits with the least friction (see Positioning & market timing below).
+  well, has good work/life balance, is genuinely engaging day-to-day (Coupa's core failure
+  was this one — stable and paid fine, but was miserable to actually do), and ideally feels
+  mission-driven rather than purely commercial (the thing missed most from Instructure — EdTech
+  is the strongest candidate sector for this, but not the only acceptable one). Staff/Principal
+  is not the goal in itself; Senior IC is the pragmatic lane most likely to deliver these traits
+  with the least friction (see Positioning & market timing below).
 - First baby due **January 2027** — a real constraint on the schedule, not just a life note.
   See the baby buffer in the Phase breakdown.
 - **Fractional Software Architect for a pre-seed startup (~$200k raised), ongoing for ~8 months,
@@ -68,7 +70,7 @@ Decided after talking through the realistic odds of this plan landing a remote r
 
 - **Target Senior IC as the primary lane — not as a fallback from Staff/Principal, but because
   it's actually the best fit for what's wanted.** The real goal is remote + stable + well-paid +
-  good WLB + engaging, not a title. Three reasons stack in favor of Senior as the lane to get
+  good WLB + engaging + ideally mission-driven, not a title. Three reasons stack in favor of Senior as the lane to get
   there: (1) applying Senior-to-Senior is a lateral move from the current Carvana title, so it
   doesn't reopen the "why did your title go down" question the way a Staff/Principal application
   does; (2) total YoE (~7 now, ~8.5-9 by the end of this plan) is a hard filter at a lot of
